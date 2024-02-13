@@ -1,7 +1,4 @@
 import React from 'react';
+import "./Game.css"
 
-const Game: React.FC = () => {
-    return null;
-};
-
-export default Game;
+export {};
