@@ -14,13 +14,13 @@ type TileProps = {
 /**
  * Tile component representing a tile in the puzzle.
  * @param isCorrect Tells if the tile is in the correct position.
- * @param isHidden Tells if the tile is hidden, i.e. 0 for visible and 1 for hidden
- * @param number Number displayed on tile
- * @param onClick Callback function to handle tile click
- * @param tileId  Identifier of the tile
- * @param size Size of the tile
- * @param cols The number of columns
- * @returns 
+ * @param isHidden Tells if the tile is hidden, i.e. 0 for visible and 1 for hidden.
+ * @param number Number displayed on tile.
+ * @param onClick Callback function to handle tile click.
+ * @param tileId  Identifier of the tile.
+ * @param size Size of the tile.
+ * @param cols The number of columns.
+ * @returns Element representing the tile.
  */
 const Tile: React.FC<TileProps> = ({
     isCorrect,
