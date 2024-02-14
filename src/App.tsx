@@ -1,5 +1,5 @@
 import Game from "./components/game/Game";
-import ".App.css";
+import "./App.css";
 
 /**
  * Main App component representing application root.
