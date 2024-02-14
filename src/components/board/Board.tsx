@@ -8,7 +8,7 @@ import "./Board.css";
 type BoardProps = {
     rows: number;
     cols: number;
-}
+};
 
 /**
  * 
@@ -31,8 +31,8 @@ const Board: React.FC<BoardProps> = ({rows, cols}) => {
 
     // Calculate tile size based on screen size and number of columns/rows
     const tileSize = Math.min(
-        ((screenSize.width - 40) / colsToFit -12), 
-        ((screenSize.height - 40) / rowsToFit - 12)
+        ((screenSize.width - 40) / colsToFit) - 12, 
+        ((screenSize.height - 40) / rowsToFit) - 12
     );
 
     // Calculate the width and the height of the inner board
@@ -61,7 +61,7 @@ const Board: React.FC<BoardProps> = ({rows, cols}) => {
 
     return (
         <div className='board-container'>
-            <div className='inner.board' style={{ "--cols": cols, "--rows": rows, width: `${innerBoardWidth}px`, height: `${innerBoardHeight}px` } as React.CSSProperties}>
+            <div className='inner-board' style={{ "--cols": cols, "--rows": rows, width: `${innerBoardWidth}px`, height: `${innerBoardHeight}px` } as React.CSSProperties}>
                 {tiles.map((tile, i) => (
                     <Tile
                         key={i}

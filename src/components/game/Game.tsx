@@ -17,7 +17,7 @@ const Game: React.FC<GameProps> = ({rows, cols}) => {
     return (
         <div className='game-container'>
             <div className='game'>
-                <Board rows={rows} cols={cols} />
+                <Board rows={rows} cols={cols}/>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import './Text.css';
 
 interface TextProps {
     text: string;
-}
+};
 
 const Text: React.FC<TextProps> = ({ text }) => {
     return (

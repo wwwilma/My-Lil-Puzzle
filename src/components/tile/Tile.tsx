@@ -36,9 +36,9 @@ const Tile: React.FC<TileProps> = ({
 
     return (
         <div
-        className={tileClasses}
-        onClick={onClick}
-        style={{ "--tile-size": `${size}px`, "--cols": cols } as React.CSSProperties}
+            className={tileClasses}
+            onClick={onClick}
+            style={{ "--tile-size": `${size}px`, "--cols": cols } as React.CSSProperties}
         >
             <span className="tile-number">{number}</span>    
         </div>
