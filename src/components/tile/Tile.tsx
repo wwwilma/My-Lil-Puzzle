@@ -3,7 +3,7 @@ import "./Tile.css"
 
 type TileProps = {
     isCorrect: boolean; 
-    isHidden: number;
+    isHidden: boolean;
     number: number; 
     onClick: () => void;
     tileId: number; 
