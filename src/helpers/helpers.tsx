@@ -24,14 +24,13 @@ export const generateArray = (cols: number, rows: number): number[] => {
  */
 const countInversions = (arr: number []) => {
     let inversions = 0;
-
-    inversions = arr.reduce((count, currentTile, currentIndex) => {
-        return (
-            count +
-            arr.slice(currentIndex + 1).filter((tile) => tile && tile < currentTile)
-                .length // Count the number of tiles smaller than current tile
-        );
-    }, 0);
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) { // Compare the current element with rest of the elements
+            if (arr[i] && arr[j] && arr[i] > arr[j]) { // Check if inversion exists
+                inversions++; // Increment the inversion count
+            }
+        }
+    }
     return inversions;
 };
 
@@ -67,10 +66,12 @@ const isSolvable = (cols: number, rows: number, arr:number[]): boolean => {
  * @param arr The array that is shuffled.
  * @returns The shuffled array.
  */
-const shuffle = (arr: number []) => {
+const shuffle = (arr: number[]): number[] => {
     for (let i = arr.length - 1; i > 0; i--) {
         const rand = Math.floor(Math.random() * (i + 1)); // Generate random index withing range
-        [arr[i], arr[rand]] = [arr[rand], arr[i]]; // Swap current element with random one
+        const temp = arr[i];
+        arr[i] = arr[rand];
+        arr[rand] = temp;
     }
     return arr; //
 };
