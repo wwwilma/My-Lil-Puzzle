@@ -22,3 +22,9 @@
 .tile.hidden {
     visibility: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+    .tile {
+        font-size: 14px;
+    }
+}
