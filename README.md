@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# N-puzzle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Welcome to the N-puzzle! This project is a React application built with TypeScript.
 
-In the project directory, you can run:
+The puzzle game consists of a grid of numbered tiles, with one tile missing. The goal of the game is to rearrange the tiles to place them in the correct order, starting from 1 at the top left corner.
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Rules
+To play, simply click on a tile. This will move the tile towards the blank space if it is in the same row or column as it. The tile does not have to be directly adjacent to the blank space. If you click on a tile several steps from the it, all of those tiles will move towards that space.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Winning
+The puzzle is considered solved when the tiles are arranged in ascending numerical order, from left to right, top to bottom, with the empty space in the bottom right corner. If you manage to move the tiles into the correct order, you have won.
 
-### `npm test`
+### Restart
+Click on the restart button "Starta om" to shuffle the tiles and play again. You can start over with a rearranged board at any time by clicking the button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run the Program
 
-### `npm run build`
+1. Download the project.
+2. Navigate to the project directory.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Once the installation is complete, start the development server:
+   ```bash
+   npm start
+   ```
+   This will open the application in your default web browser, usually at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Changing the Number of Rows and Columns
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You are welcome to play around with different numbers of rows and columns in the game. To do this, navigate to `src/App.tsx` and locate the comment indicating where to make the changes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
+Do you have any questions or suggestions for improvement? Please let me know!
