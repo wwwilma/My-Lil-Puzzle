@@ -2,7 +2,7 @@
     background-color: #FFCC00;
     border-radius: 12px;
     border: none;
-    color: #292929; /* Text color */
+    color: #292929; 
     cursor: pointer;
     font-size: min(5vw, 18px);
     font-weight: bold;
