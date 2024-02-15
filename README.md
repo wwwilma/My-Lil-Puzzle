@@ -9,7 +9,7 @@ The puzzle game consists of a grid of numbered tiles, with one tile missing. The
 ## How to Play
 
 ### Rules
-To play, simply click on a tile. This will move the tile towards the blank space if it is in the same row or column as it. The tile does not have to be directly adjacent to the blank space. If you click on a tile several steps from the it, all of those tiles will move towards that space.
+To play, simply click on a tile. This will move the tile towards the blank space if it is in the same row or column as it. The tile does not have to be directly adjacent to the blank space. If you click on a tile several steps from it, all of those tiles will move towards that space.
 
 ### Winning
 The puzzle is considered solved when the tiles are arranged in ascending numerical order, from left to right, top to bottom, with the empty space in the bottom right corner. If you manage to move the tiles into the correct order, you have won.
@@ -22,10 +22,12 @@ Click on the restart button "Starta om" to shuffle the tiles and play again. You
 1. Download the project.
 2. Navigate to the project directory.
 3. Install dependencies:
+
    ```bash
    npm install
    ```
 4. Once the installation is complete, start the development server:
+
    ```bash
    npm start
    ```
