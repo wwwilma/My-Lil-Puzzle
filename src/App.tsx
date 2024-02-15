@@ -9,8 +9,8 @@ function App() {
   // Hi you guys at Grebban!
   // Here, you are welcome to change the number of rows and columns.
   // Please let me know if you have any questions.
-  const rows = 3;
-  const cols = 3;
+  const rows = 4;
+  const cols = 6;
 
   return (
     <div className="App">

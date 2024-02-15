@@ -14,11 +14,7 @@ export const getBoardSize = (cols: number, rows: number): number => cols * rows;
  */
 export const generateArray = (cols: number, rows: number): number[] => {
     const size = getBoardSize(cols, rows); // Calculate size of board
-    const array: number [] = [];
-    for (let i = 0; i < size; i++) {
-        array.push(i + 1); // Generate an array from 1 to size
-    }
-    return array;
+    return Array.from({ length: size }, (_, index) => index + 1);
 };
 
 /**
