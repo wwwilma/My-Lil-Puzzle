@@ -8,6 +8,8 @@ The puzzle game consists of a grid of numbered tiles, with one tile missing. The
 
 ## How to Play
 
+![](https://github.com/wwwilma/My-Lil-Puzzle/blob/master/public/readme-gif.gif)
+
 ### Rules
 To play, simply click on a tile. This will move the tile towards the blank space if it is in the same row or column as it. The tile does not have to be directly adjacent to the blank space. If you click on a tile several steps from it, all of those tiles will move towards that space.
 
