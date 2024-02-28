@@ -6,7 +6,6 @@ import "./App.css";
  * @returns Application element.
  */
 function App() {
-  // Hi you guys at Grebban!
   // Here, you are welcome to change the number of rows and columns.
   // Please let me know if you have any questions.
   const rows = 4;
